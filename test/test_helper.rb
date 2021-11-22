@@ -18,9 +18,4 @@ class ActiveSupport::TestCase
   # 並列テストの有効化・無効化
   # workers: プロセス数を渡す(2以上 => 有効、2未満 => 無効)
   parallelize(workers: :number_of_processors)
-
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  fixtures :all
-
-  # Add more helper methods to be used by all tests here...
 end
