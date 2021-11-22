@@ -18,4 +18,9 @@ class ActiveSupport::TestCase
   # 並列テストの有効化・無効化
   # workers: プロセス数を渡す(2以上 => 有効、2未満 => 無効)
   parallelize(workers: :number_of_processors)
+
+  # アクティブなユーザーを返す
+  def active_user
+    User.find_by(activated: true)
+  end
 end
